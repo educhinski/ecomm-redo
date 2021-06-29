@@ -1,6 +1,6 @@
 <!-- Navigation -->
 <nav
-  *ngIf="isLoggedIn"
+  *ngIf="loggedIn"
   class="navbar navbar-expand-md navbar-light fixed-top my-md-3"
 >
   <a class="navbar-brand logo" [routerLink]="['/']">LOGO</a>
@@ -78,7 +78,7 @@
 
 <!-- If Logged In -->
 <nav
-  *ngIf="!isLoggedIn"
+  *ngIf="!loggedIn"
   class="navbar navbar-expand-md navbar-light fixed-top my-md-3"
 >
   <a class="navbar-brand logo" [routerLink]="['/']">LOGO</a>
