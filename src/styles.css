@@ -4,6 +4,10 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
 
+:root {
+  --theme-color: #fb8434;
+}
+
 html {
   height: 100%;
 }
