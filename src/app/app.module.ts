@@ -5,9 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DefaultComponent } from './components/default/default.component';
 import { SharedModule } from './shared/shared.module';
+import { BrandsComponent } from './components/brands/brands.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { HighlightsComponent } from './components/highlights/highlights.component';
 
 @NgModule({
-  declarations: [AppComponent, DefaultComponent],
+  declarations: [AppComponent, DefaultComponent, BrandsComponent, CarouselComponent, HighlightsComponent],
   imports: [BrowserModule, AppRoutingModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent],
