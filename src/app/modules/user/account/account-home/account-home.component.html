@@ -29,30 +29,27 @@
             aria-labelledby="collapseListGroupHeading1"
           >
             <ul class="list-group">
-              <li
-                class="list-group-item"
-                [routerLink]="['/user/account/orders']"
-              >
+              <li class="list-group-item" [routerLink]="['./orders']">
                 Orders
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item" [routerLink]="['./inbox']">
                 Inbox
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item" [routerLink]="['./reviews']">
                 Pending Reviews
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item" [routerLink]="['./credit']">
                 Credit
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item" [routerLink]="['./saved-items']">
                 Saved Items
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item" [routerLink]="['./recent']">
                 Recently Viewed
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
@@ -82,20 +79,20 @@
             aria-labelledby="collapseListGroupHeading2"
           >
             <ul class="list-group">
-              <li class="list-group-item">
+              <li class="list-group-item" [routerLink]="['./account-details']">
                 Details
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item" [routerLink]="['./address']">
                 Address Book
 
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item" [routerLink]="['./change-password']">
                 Change Password
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item" [routerLink]="['./newsletter']">
                 Newsletter
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
