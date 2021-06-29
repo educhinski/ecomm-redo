@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*Bootstrap, FontAwesome imports */
+@import "~bootstrap/dist/css/bootstrap.min";
+@import "~font-awesome/css/font-awesome.min";
+
 html {
   height: 100%;
 }
