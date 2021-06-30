@@ -8,7 +8,7 @@
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */:root{--theme-color:#fb8434}html{height:100%}body{padding-top:6rem}
+ */:root{--theme-color:#fb8434}html{height:100%}body{padding-top:6rem;background:#e5e5e5!important}
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
