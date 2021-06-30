@@ -8,6 +8,11 @@
   --theme-color: #fb8434;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 html {
   height: 100%;
 }
@@ -15,4 +20,5 @@ html {
 body {
   padding-top: 6rem;
   background: #e5e5e5 !important;
+  margin: 0;
 }
