@@ -9,10 +9,11 @@ import { BrandsComponent } from './components/brands/brands.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { HighlightsComponent } from './components/highlights/highlights.component';
 import { CartComponent } from './components/cart/cart.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, DefaultComponent, BrandsComponent, CarouselComponent, HighlightsComponent, CartComponent],
-  imports: [BrowserModule, AppRoutingModule, SharedModule],
+  imports: [BrowserModule, AppRoutingModule, SharedModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
