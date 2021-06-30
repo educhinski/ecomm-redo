@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
 // import custom validator to validate that password and confirm password fields match
-import { MustMatch } from './helpers/must-match.validator';
+import { MustMatch } from '../../../shared/helpers/must-match.validator';
 
 @Component({
   selector: 'app-seller-register',
