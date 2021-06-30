@@ -8,9 +8,10 @@ import { SharedModule } from './shared/shared.module';
 import { BrandsComponent } from './components/brands/brands.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { HighlightsComponent } from './components/highlights/highlights.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
-  declarations: [AppComponent, DefaultComponent, BrandsComponent, CarouselComponent, HighlightsComponent],
+  declarations: [AppComponent, DefaultComponent, BrandsComponent, CarouselComponent, HighlightsComponent, CartComponent],
   imports: [BrowserModule, AppRoutingModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent],
