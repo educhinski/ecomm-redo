@@ -5,23 +5,32 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { UserDefaultComponent } from './user-default/user-default.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
   {
     path: 'account',
     loadChildren: () =>
       import('./account/account.module').then((m) => m.AccountModule),
   },
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  {
+    path: '',
+    component: UserDefaultComponent,
+    children: [
+      { path: 'login', component: LoginComponent },
+      { path: 'register', component: RegisterComponent },
+      { path: '', redirectTo: 'login', pathMatch: 'full' },
+    ],
+  },
 ];
 
 @NgModule({
-  declarations: [LoginComponent, RegisterComponent],
+  declarations: [LoginComponent, RegisterComponent, UserDefaultComponent],
   imports: [
     CommonModule,
     FormsModule,
+    SharedModule,
     ReactiveFormsModule,
     RouterModule.forChild(routes),
   ],

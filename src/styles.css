@@ -18,7 +18,10 @@ html {
 }
 
 body {
-  padding-top: 6rem;
   background: #e5e5e5 !important;
   margin: 0;
+}
+
+main {
+  padding-top: 6rem;
 }
