@@ -19,6 +19,7 @@ import { ConfirmedComponent } from './orders/checkout/confirmed/confirmed.compon
 import { DeliveryComponent } from './orders/checkout/delivery/delivery.component';
 import { PaymentComponent } from './orders/checkout/payment/payment.component';
 import { SummaryComponent } from './orders/checkout/summary/summary.component';
+import { AccountDeleteComponent } from './account-delete/account-delete.component';
 
 const routes: Routes = [
   { path: 'orders/checkout/confirmed', component: ConfirmedComponent },
@@ -42,6 +43,7 @@ const routes: Routes = [
   { path: 'address', component: AddressComponent },
   { path: 'password', component: PasswordComponent },
   { path: 'newsletter', component: NewsletterComponent },
+  { path: 'delete', component: AccountDeleteComponent },
   { path: '', component: AccountHomeComponent },
 ];
 
@@ -63,6 +65,7 @@ const routes: Routes = [
     DeliveryComponent,
     PaymentComponent,
     SummaryComponent,
+    AccountDeleteComponent,
   ],
   imports: [CommonModule, ReactiveFormsModule, RouterModule.forChild(routes)],
 })
