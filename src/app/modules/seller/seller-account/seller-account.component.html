@@ -49,11 +49,7 @@
                 Stock
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
-              <li
-                class="list-group-item"
-                [routerLink]="['./recent']"
-                (click)="onClick()"
-              >
+              <li class="list-group-item" [routerLink]="['./recent']">
                 Recently Added
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
@@ -99,6 +95,40 @@
               <li class="list-group-item" [routerLink]="['./newsletter']">
                 Newsletter
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- actions -->
+      <div class="panel-group" role="tablist">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="collapseListGroupHeading3">
+            <h4 class="panel-title m-0 py-2">
+              <a
+                class="collapsed h5 text-uppercase text-center"
+                data-toggle="collapse"
+                href="#collapseListGroup3"
+                aria-expanded="false"
+                aria-controls="collapseListGroup3"
+              >
+                Account Action
+              </a>
+            </h4>
+          </div>
+          <div
+            id="collapseListGroup3"
+            class="panel-collapse collapse show"
+            role="tabpanel"
+            aria-labelledby="collapseListGroupHeading3"
+          >
+            <ul class="list-group">
+              <li class="list-group-item text-center btn btn-link">Logout</li>
+              <li
+                class="list-group-item text-center btn btn-link"
+                [routerLink]="['./delete']"
+              >
+                Delete account
               </li>
             </ul>
           </div>

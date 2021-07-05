@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'credit', component: SellerCreditComponent },
   { path: 'stock', component: SellerStockComponent },
   { path: 'recent', component: SellerRecentComponent },
-  { path: 'account-details', component: SellerDetailsComponent },
+  { path: 'details', component: SellerDetailsComponent },
   { path: 'address', component: SellerAddressComponent },
   { path: 'password', component: SellerPasswordComponent },
   { path: 'newsletter', component: SellerNewsletterComponent },
