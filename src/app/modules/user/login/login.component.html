@@ -93,7 +93,11 @@
         <button class="btn btn-lg btn-outline-dark btn-block" type="submit">
           Login with Google
         </button>
-        <p class="first-time mt-5">
+        <!-- forgot password -->
+        <p class="first-time mt-5 text-center">
+          <a [routerLink]="['/user/account/password']">Forgot Password</a>
+        </p>
+        <p class="first-time mt-2 text-center">
           First time here?
           <a [routerLink]="['/user/register']">Register</a>
         </p>

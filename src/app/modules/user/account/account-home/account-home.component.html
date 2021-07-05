@@ -100,6 +100,40 @@
           </div>
         </div>
       </div>
+      <!-- actions -->
+      <div class="panel-group" role="tablist">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="collapseListGroupHeading2">
+            <h4 class="panel-title m-0 py-2">
+              <a
+                class="collapsed h5 text-uppercase text-center"
+                data-toggle="collapse"
+                href="#collapseListGroup2"
+                aria-expanded="false"
+                aria-controls="collapseListGroup2"
+              >
+                Account Action
+              </a>
+            </h4>
+          </div>
+          <div
+            id="collapseListGroup2"
+            class="panel-collapse collapse show"
+            role="tabpanel"
+            aria-labelledby="collapseListGroupHeading2"
+          >
+            <ul class="list-group">
+              <li class="list-group-item text-center btn btn-link">Logout</li>
+              <li
+                class="list-group-item text-center btn btn-link"
+                [routerLink]="['./delete']"
+              >
+                Delete account
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
