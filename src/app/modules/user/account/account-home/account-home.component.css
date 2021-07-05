@@ -45,3 +45,12 @@ i {
   margin-right: 0.5em;
   padding-top: 0.3em;
 }
+
+li.btn-link {
+  color: var(--theme-color, orange);
+  text-transform: uppercase;
+}
+
+li.btn-link:hover {
+  background: #d5d5d5;
+}
