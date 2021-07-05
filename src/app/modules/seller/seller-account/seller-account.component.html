@@ -29,7 +29,7 @@
             aria-labelledby="collapseListGroupHeading1"
           >
             <ul class="list-group">
-              <li class="list-group-item" [routerLink]="['./orders']">
+              <li class="list-group-item" [routerLink]="['./sales']">
                 Sales
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
@@ -45,11 +45,15 @@
                 Credit
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
-              <li class="list-group-item" [routerLink]="['./saved-items']">
+              <li class="list-group-item" [routerLink]="['./stock']">
                 Stock
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
-              <li class="list-group-item" [routerLink]="['./recent']">
+              <li
+                class="list-group-item"
+                [routerLink]="['./recent']"
+                (click)="onClick()"
+              >
                 Recently Added
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </li>
