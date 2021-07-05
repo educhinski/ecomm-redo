@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AccountHomeComponent } from './account-home/account-home.component';
 import { OrdersComponent } from './orders/orders.component';
@@ -63,6 +64,6 @@ const routes: Routes = [
     PaymentComponent,
     SummaryComponent,
   ],
-  imports: [CommonModule, RouterModule.forChild(routes)],
+  imports: [CommonModule, ReactiveFormsModule, RouterModule.forChild(routes)],
 })
 export class AccountModule {}
