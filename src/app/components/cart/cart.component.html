@@ -27,7 +27,7 @@
               <h4><b>Shopping Cart</b></h4>
             </div>
             <div class="col align-self-center">
-              <button type="submit" class="btn btn-default mt-0">
+              <button type="submit" class="btn btn-default mt-0 py-2">
                 Delete All Items
               </button>
             </div>
@@ -93,11 +93,25 @@
             </div>
           </div>
         </div>
-        <div class="back-to-shop">
+        <div
+          class="
+            back-to-shop
+            d-flex
+            flex-row
+            justify-content-between
+            align-items-center
+          "
+        >
           <a routerLink="/home">
             &#8592;
             <span class="text-muted">Back to shop</span>
           </a>
+          <button
+            class="btn btn-default w-25 mt-0 py-2"
+            routerLink="/user/account/orders/checkout"
+          >
+            Check Out
+          </button>
         </div>
       </div>
       <!-- <div class="col-md-4 summary">
