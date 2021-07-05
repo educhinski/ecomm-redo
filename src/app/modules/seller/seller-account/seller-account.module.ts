@@ -15,11 +15,12 @@ import { SellerStockComponent } from './seller-stock/seller-stock.component';
 import { SellerSalesComponent } from './seller-sales/seller-sales.component';
 import { SellerChatComponent } from './seller-inbox/seller-chat/seller-chat.component';
 import { SellerChatListComponent } from './seller-inbox/seller-chat-list/seller-chat-list.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SellerAccountDeleteComponent } from './seller-account-delete/seller-account-delete.component';
 
 const routes: Routes = [
   { path: '', component: SellerAccountComponent },
   { path: 'sales', component: SellerSalesComponent },
-  // { path: 'inbox/chat', component: SellerChatComponent },
   {
     path: 'inbox',
     component: SellerInboxComponent,
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: 'address', component: SellerAddressComponent },
   { path: 'password', component: SellerPasswordComponent },
   { path: 'newsletter', component: SellerNewsletterComponent },
+  { path: 'delete', component: SellerAccountDeleteComponent },
 ];
 
 @NgModule({
@@ -53,7 +55,8 @@ const routes: Routes = [
     SellerSalesComponent,
     SellerChatComponent,
     SellerChatListComponent,
+    SellerAccountDeleteComponent,
   ],
-  imports: [CommonModule, RouterModule.forChild(routes)],
+  imports: [CommonModule, ReactiveFormsModule, RouterModule.forChild(routes)],
 })
 export class SellerAccountModule {}
