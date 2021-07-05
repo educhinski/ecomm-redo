@@ -13,11 +13,21 @@ import { SellerPasswordComponent } from './seller-password/seller-password.compo
 import { SellerNewsletterComponent } from './seller-newsletter/seller-newsletter.component';
 import { SellerStockComponent } from './seller-stock/seller-stock.component';
 import { SellerSalesComponent } from './seller-sales/seller-sales.component';
+import { SellerChatComponent } from './seller-inbox/seller-chat/seller-chat.component';
+import { SellerChatListComponent } from './seller-inbox/seller-chat-list/seller-chat-list.component';
 
 const routes: Routes = [
   { path: '', component: SellerAccountComponent },
   { path: 'sales', component: SellerSalesComponent },
-  { path: 'inbox', component: SellerInboxComponent },
+  // { path: 'inbox/chat', component: SellerChatComponent },
+  {
+    path: 'inbox',
+    component: SellerInboxComponent,
+    children: [
+      { path: '', component: SellerChatListComponent },
+      { path: 'chat', component: SellerChatComponent },
+    ],
+  },
   { path: 'reviews', component: SellerReviewsComponent },
   { path: 'credit', component: SellerCreditComponent },
   { path: 'stock', component: SellerStockComponent },
@@ -41,6 +51,8 @@ const routes: Routes = [
     SellerNewsletterComponent,
     SellerStockComponent,
     SellerSalesComponent,
+    SellerChatComponent,
+    SellerChatListComponent,
   ],
   imports: [CommonModule, RouterModule.forChild(routes)],
 })
