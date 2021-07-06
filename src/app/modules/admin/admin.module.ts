@@ -19,8 +19,14 @@ import { OverviewComponent } from './overview/overview.component';
 import { AnnualSalesChartComponent } from './charts/annual-sales-chart/annual-sales-chart.component';
 
 const routes: Routes = [
-  { path: 'overview', component: OverviewComponent },
-  { path: '', redirectTo: 'overview', pathMatch: 'full' },
+  {
+    path: '',
+    component: AdminHomeComponent,
+    children: [
+      { path: 'overview', component: OverviewComponent },
+      { path: '', redirectTo: 'overview', pathMatch: 'full' },
+    ],
+  },
 ];
 
 @NgModule({
