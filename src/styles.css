@@ -5,7 +5,8 @@
 @import "~font-awesome/css/font-awesome.min.css";
 
 :root {
-  --theme-color: #fb8434;
+  --theme-color: #03bb85;
+  /* --theme-color: #fb8434; */
 }
 
 html,

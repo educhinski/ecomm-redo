@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AccountHomeComponent } from './account-home/account-home.component';
 import { OrdersComponent } from './orders/orders.component';
@@ -18,6 +19,7 @@ import { ConfirmedComponent } from './orders/checkout/confirmed/confirmed.compon
 import { DeliveryComponent } from './orders/checkout/delivery/delivery.component';
 import { PaymentComponent } from './orders/checkout/payment/payment.component';
 import { SummaryComponent } from './orders/checkout/summary/summary.component';
+import { AccountDeleteComponent } from './account-delete/account-delete.component';
 import { AccountDefaultComponent } from './account-default/account-default.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 
@@ -47,6 +49,7 @@ const routes: Routes = [
       { path: 'address', component: AddressComponent },
       { path: 'password', component: PasswordComponent },
       { path: 'newsletter', component: NewsletterComponent },
+      { path: 'delete', component: AccountDeleteComponent },
       { path: '', component: AccountHomeComponent },
     ],
   },
@@ -70,8 +73,14 @@ const routes: Routes = [
     DeliveryComponent,
     PaymentComponent,
     SummaryComponent,
+    AccountDeleteComponent,
     AccountDefaultComponent,
   ],
-  imports: [CommonModule, SharedModule, RouterModule.forChild(routes)],
+  imports: [
+    CommonModule,
+    SharedModule,
+    ReactiveFormsModule,
+    RouterModule.forChild(routes),
+  ],
 })
 export class AccountModule {}

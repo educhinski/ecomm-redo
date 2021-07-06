@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-seller-account',
   templateUrl: './seller-account.component.html',
-  styleUrls: ['./seller-account.component.css']
+  styleUrls: ['./seller-account.component.css'],
 })
 export class SellerAccountComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
