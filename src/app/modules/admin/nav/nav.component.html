@@ -22,6 +22,7 @@
       </mat-toolbar-row>
     </mat-toolbar>
     <mat-divider></mat-divider>
+    <mat-divider></mat-divider>
     <mat-nav-list class="pt-0">
       <a
         mat-list-item
@@ -30,10 +31,24 @@
       >
         Overview
       </a>
-      <a mat-list-item [routerLink]="['./products']">Products</a>
-      <a mat-list-item [routerLink]="['./customers']">Customers</a>
-      <a mat-list-item [routerLink]="['./sellers']">Sellers</a>
-      <a mat-list-item [routerLink]="['./profile']">Profile</a>
+      <a
+        mat-list-item
+        [routerLink]="['./products']"
+        [routerLinkActive]="['active']"
+        >Products</a
+      >
+      <a
+        mat-list-item
+        [routerLink]="['./customers']"
+        [routerLinkActive]="['active']"
+        >Customers</a
+      >
+      <a
+        mat-list-item
+        [routerLink]="['./sellers']"
+        [routerLinkActive]="['active']"
+        >Sellers</a
+      >
       <a
         mat-list-item
         [routerLink]="['./reviews']"
@@ -41,7 +56,23 @@
       >
         Reviews
       </a>
-      <a mat-list-item [routerLink]="['./settings']">Settings</a>
+      <mat-divider></mat-divider>
+      <mat-divider></mat-divider>
+
+      <h4 matSubheader class="text-uppercase">Account</h4>
+      <a
+        mat-list-item
+        [routerLink]="['./profile']"
+        [routerLinkActive]="['active']"
+        >Profile
+      </a>
+      <a
+        mat-list-item
+        [routerLink]="['./settings']"
+        [routerLinkActive]="['active']"
+        >Settings
+      </a>
+      <a mat-list-item [routerLink]="['/admin/login']">Logout</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

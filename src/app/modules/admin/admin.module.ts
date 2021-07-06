@@ -22,6 +22,9 @@ import { AdminReviewsComponent } from './admin-reviews/admin-reviews.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminRegisterComponent } from './admin-register/admin-register.component';
 import { AdminDefaultComponent } from './admin-default/admin-default.component';
+import { AdminProfileComponent } from './admin-profile/admin-profile.component';
+import { AdminAddDeleteComponent } from './admin-add-delete/admin-add-delete.component';
+import { AdminPasswordComponent } from './admin-password/admin-password.component';
 
 const routes: Routes = [
   {
@@ -34,11 +37,13 @@ const routes: Routes = [
         children: [
           { path: 'overview', component: OverviewComponent },
           { path: 'reviews', component: AdminReviewsComponent },
+          { path: 'profile', component: AdminProfileComponent },
           { path: '', redirectTo: 'overview', pathMatch: 'full' },
         ],
       },
       { path: 'login', component: AdminLoginComponent },
       { path: 'register', component: AdminRegisterComponent },
+      { path: '', redirectTo: 'login', pathMatch: 'full' },
     ],
   },
 ];
@@ -54,6 +59,9 @@ const routes: Routes = [
     AdminLoginComponent,
     AdminRegisterComponent,
     AdminDefaultComponent,
+    AdminProfileComponent,
+    AdminAddDeleteComponent,
+    AdminPasswordComponent,
   ],
   imports: [
     CommonModule,
