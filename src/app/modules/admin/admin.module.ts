@@ -17,6 +17,7 @@ import { CardComponent } from './card/card.component';
 import { NavComponent } from './nav/nav.component';
 import { OverviewComponent } from './overview/overview.component';
 import { AnnualSalesChartComponent } from './charts/annual-sales-chart/annual-sales-chart.component';
+import { AdminReviewsComponent } from './admin-reviews/admin-reviews.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,7 @@ const routes: Routes = [
     component: AdminHomeComponent,
     children: [
       { path: 'overview', component: OverviewComponent },
+      { path: 'reviews', component: AdminReviewsComponent },
       { path: '', redirectTo: 'overview', pathMatch: 'full' },
     ],
   },
@@ -36,6 +38,7 @@ const routes: Routes = [
     AnnualSalesChartComponent,
     NavComponent,
     OverviewComponent,
+    AdminReviewsComponent,
   ],
   imports: [
     CommonModule,

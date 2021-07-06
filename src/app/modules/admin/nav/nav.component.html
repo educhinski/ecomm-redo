@@ -27,12 +27,20 @@
         mat-list-item
         [routerLink]="['./overview']"
         [routerLinkActive]="['active']"
-        >Overview</a
       >
+        Overview
+      </a>
       <a mat-list-item [routerLink]="['./products']">Products</a>
       <a mat-list-item [routerLink]="['./customers']">Customers</a>
       <a mat-list-item [routerLink]="['./sellers']">Sellers</a>
-      <a mat-list-item [routerLink]="['./stores']">Stores</a>
+      <a mat-list-item [routerLink]="['./profile']">Profile</a>
+      <a
+        mat-list-item
+        [routerLink]="['./reviews']"
+        [routerLinkActive]="['active']"
+      >
+        Reviews
+      </a>
       <a mat-list-item [routerLink]="['./settings']">Settings</a>
     </mat-nav-list>
   </mat-sidenav>
