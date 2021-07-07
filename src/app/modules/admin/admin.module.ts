@@ -29,6 +29,8 @@ import { AdminCustomersComponent } from './admin-customers/admin-customers.compo
 import { CustomerTableComponent } from './admin-customers/customer-table/customer-table.component';
 import { AdminSellersComponent } from './admin-sellers/admin-sellers.component';
 import { SellerTableComponent } from './admin-sellers/seller-table/seller-table.component';
+import { AdminAdminsComponent } from './admin-admins/admin-admins.component';
+import { AdminTableComponent } from './admin-admins/admin-table/admin-table.component';
 
 const routes: Routes = [
   {
@@ -44,6 +46,7 @@ const routes: Routes = [
           { path: 'profile', component: AdminProfileComponent },
           { path: 'customers', component: AdminCustomersComponent },
           { path: 'sellers', component: AdminSellersComponent },
+          { path: 'admins', component: AdminAdminsComponent },
           { path: '', redirectTo: 'overview', pathMatch: 'full' },
         ],
       },
@@ -72,6 +75,8 @@ const routes: Routes = [
     CustomerTableComponent,
     AdminSellersComponent,
     SellerTableComponent,
+    AdminAdminsComponent,
+    AdminTableComponent,
   ],
   imports: [
     CommonModule,
