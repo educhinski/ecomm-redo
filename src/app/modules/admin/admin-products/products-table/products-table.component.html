@@ -1,0 +1,58 @@
+<table class="table">
+  <thead class="text-muted">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Product</th>
+      <th scope="col">Seller</th>
+      <th scope="col">Upload Time</th>
+      <th scope="col">Category</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of [1, 2, 3, 4, 5, 6, 7]">
+      <!-- order ID -->
+      <td scope="row">#1</td>
+      <!-- Customer -->
+      <td scope="row">
+        <div class="d-flex flex-row align-items-center">
+          <img src="assets/images/product-1.jpg" alt="img" />
+          <div class="ml-3">
+            <div>
+              <span>Red T-Shirt</span>
+            </div>
+            <div>$50</div>
+            <div class="text-small text-muted">Good quality product</div>
+          </div>
+        </div>
+      </td>
+      <!-- seller -->
+      <td>
+        <div class="">John Doe</div>
+        <div class="text-small text-muted">email@example.com</div>
+      </td>
+      <!-- review date -->
+      <td>
+        <div class="">
+          <div>May 26, 2021</div>
+          <div class="text-small text-muted">6:30PM</div>
+        </div>
+      </td>
+      <!-- category -->
+      <td>
+        <span class="badge badge-light text-uppercase px-3 py-2">Retail</span>
+      </td>
+      <!-- extra icon -->
+      <td>
+        <button mat-button [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Edit</button>
+          <button mat-menu-item>Delete</button>
+        </mat-menu>
+        <!-- <i class="fa fa-ellipsis-v" aria-hidden="true"></i> -->
+      </td>
+    </tr>
+  </tbody>
+</table>

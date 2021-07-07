@@ -25,6 +25,24 @@ import { AdminDefaultComponent } from './admin-default/admin-default.component';
 import { AdminProfileComponent } from './admin-profile/admin-profile.component';
 import { AdminAddDeleteComponent } from './admin-add-delete/admin-add-delete.component';
 import { AdminPasswordComponent } from './admin-password/admin-password.component';
+import { AdminCustomersComponent } from './admin-customers/admin-customers.component';
+import { CustomerTableComponent } from './admin-customers/customer-table/customer-table.component';
+import { AdminSellersComponent } from './admin-sellers/admin-sellers.component';
+import { SellerTableComponent } from './admin-sellers/seller-table/seller-table.component';
+import { AdminAdminsComponent } from './admin-admins/admin-admins.component';
+import { AdminTableComponent } from './admin-admins/admin-table/admin-table.component';
+import { AdminOrdersComponent } from './admin-orders/admin-orders.component';
+import { AdminProductsComponent } from './admin-products/admin-products.component';
+import { ProductsTableComponent } from './admin-products/products-table/products-table.component';
+import { AddProductsComponent } from './admin-products/add-products/add-products.component';
+import { AddCategoryComponent } from './admin-products/add-category/add-category.component';
+import { EditCategoryComponent } from './admin-products/edit-category/edit-category.component';
+import { AdminSettingsComponent } from './admin-settings/admin-settings.component';
+import { AddSettingsComponent } from './admin-settings/add-settings/add-settings.component';
+import { EditSettingsComponent } from './admin-settings/edit-settings/edit-settings.component';
+import { SettingsComponent } from './admin-settings/settings/settings.component';
+import { AddSliderComponent } from './admin-products/add-slider/add-slider.component';
+import { SliderTableComponent } from './admin-products/slider-table/slider-table.component';
 
 const routes: Routes = [
   {
@@ -38,6 +56,12 @@ const routes: Routes = [
           { path: 'overview', component: OverviewComponent },
           { path: 'reviews', component: AdminReviewsComponent },
           { path: 'profile', component: AdminProfileComponent },
+          { path: 'customers', component: AdminCustomersComponent },
+          { path: 'sellers', component: AdminSellersComponent },
+          { path: 'admins', component: AdminAdminsComponent },
+          { path: 'orders', component: AdminOrdersComponent },
+          { path: 'products', component: AdminProductsComponent },
+          { path: 'settings', component: AdminSettingsComponent },
           { path: '', redirectTo: 'overview', pathMatch: 'full' },
         ],
       },
@@ -62,6 +86,24 @@ const routes: Routes = [
     AdminProfileComponent,
     AdminAddDeleteComponent,
     AdminPasswordComponent,
+    AdminCustomersComponent,
+    CustomerTableComponent,
+    AdminSellersComponent,
+    SellerTableComponent,
+    AdminAdminsComponent,
+    AdminTableComponent,
+    AdminOrdersComponent,
+    AdminProductsComponent,
+    ProductsTableComponent,
+    AddProductsComponent,
+    AddCategoryComponent,
+    EditCategoryComponent,
+    AdminSettingsComponent,
+    AddSettingsComponent,
+    EditSettingsComponent,
+    SettingsComponent,
+    AddSliderComponent,
+    SliderTableComponent,
   ],
   imports: [
     CommonModule,
