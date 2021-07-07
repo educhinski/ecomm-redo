@@ -41,6 +41,8 @@ import { AdminSettingsComponent } from './admin-settings/admin-settings.componen
 import { AddSettingsComponent } from './admin-settings/add-settings/add-settings.component';
 import { EditSettingsComponent } from './admin-settings/edit-settings/edit-settings.component';
 import { SettingsComponent } from './admin-settings/settings/settings.component';
+import { AddSliderComponent } from './admin-products/add-slider/add-slider.component';
+import { SliderTableComponent } from './admin-products/slider-table/slider-table.component';
 
 const routes: Routes = [
   {
@@ -100,6 +102,8 @@ const routes: Routes = [
     AddSettingsComponent,
     EditSettingsComponent,
     SettingsComponent,
+    AddSliderComponent,
+    SliderTableComponent,
   ],
   imports: [
     CommonModule,

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container pb-4">
   <h1 class="mat-h1 mb-0 py-3">Products</h1>
   <mat-divider></mat-divider>
   <div class="main-body">
@@ -52,6 +52,33 @@
       </div>
       <div class="col-lg-8">
         <app-admin-add-products></app-admin-add-products>
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+    <!-- slider -->
+    <div class="row gutters-sm">
+      <div class="col-md-4 mb-3">
+        <app-admin-add-slider></app-admin-add-slider>
+      </div>
+      <div class="col-md-8 cust-table">
+        <div class="card mb-3">
+          <div
+            class="
+              card-title
+              text-uppercase
+              pt-3
+              px-2
+              d-flex
+              justify-content-between
+            "
+          >
+            <h3 class="mb-0">Slider Images List</h3>
+            <a class="btn-link">View All</a>
+          </div>
+          <div class="card-body mb-3 cust-table">
+            <app-admin-slider-table></app-admin-slider-table>
+          </div>
+        </div>
       </div>
     </div>
   </div>
