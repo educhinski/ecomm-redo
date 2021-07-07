@@ -37,6 +37,10 @@ import { ProductsTableComponent } from './admin-products/products-table/products
 import { AddProductsComponent } from './admin-products/add-products/add-products.component';
 import { AddCategoryComponent } from './admin-products/add-category/add-category.component';
 import { EditCategoryComponent } from './admin-products/edit-category/edit-category.component';
+import { AdminSettingsComponent } from './admin-settings/admin-settings.component';
+import { AddSettingsComponent } from './admin-settings/add-settings/add-settings.component';
+import { EditSettingsComponent } from './admin-settings/edit-settings/edit-settings.component';
+import { SettingsComponent } from './admin-settings/settings/settings.component';
 
 const routes: Routes = [
   {
@@ -55,6 +59,7 @@ const routes: Routes = [
           { path: 'admins', component: AdminAdminsComponent },
           { path: 'orders', component: AdminOrdersComponent },
           { path: 'products', component: AdminProductsComponent },
+          { path: 'settings', component: AdminSettingsComponent },
           { path: '', redirectTo: 'overview', pathMatch: 'full' },
         ],
       },
@@ -91,6 +96,10 @@ const routes: Routes = [
     AddProductsComponent,
     AddCategoryComponent,
     EditCategoryComponent,
+    AdminSettingsComponent,
+    AddSettingsComponent,
+    EditSettingsComponent,
+    SettingsComponent,
   ],
   imports: [
     CommonModule,
