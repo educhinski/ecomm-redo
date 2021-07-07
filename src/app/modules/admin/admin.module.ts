@@ -27,6 +27,8 @@ import { AdminAddDeleteComponent } from './admin-add-delete/admin-add-delete.com
 import { AdminPasswordComponent } from './admin-password/admin-password.component';
 import { AdminCustomersComponent } from './admin-customers/admin-customers.component';
 import { CustomerTableComponent } from './admin-customers/customer-table/customer-table.component';
+import { AdminSellersComponent } from './admin-sellers/admin-sellers.component';
+import { SellerTableComponent } from './admin-sellers/seller-table/seller-table.component';
 
 const routes: Routes = [
   {
@@ -41,6 +43,7 @@ const routes: Routes = [
           { path: 'reviews', component: AdminReviewsComponent },
           { path: 'profile', component: AdminProfileComponent },
           { path: 'customers', component: AdminCustomersComponent },
+          { path: 'sellers', component: AdminSellersComponent },
           { path: '', redirectTo: 'overview', pathMatch: 'full' },
         ],
       },
@@ -67,6 +70,8 @@ const routes: Routes = [
     AdminPasswordComponent,
     AdminCustomersComponent,
     CustomerTableComponent,
+    AdminSellersComponent,
+    SellerTableComponent,
   ],
   imports: [
     CommonModule,
