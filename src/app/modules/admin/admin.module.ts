@@ -32,6 +32,11 @@ import { SellerTableComponent } from './admin-sellers/seller-table/seller-table.
 import { AdminAdminsComponent } from './admin-admins/admin-admins.component';
 import { AdminTableComponent } from './admin-admins/admin-table/admin-table.component';
 import { AdminOrdersComponent } from './admin-orders/admin-orders.component';
+import { AdminProductsComponent } from './admin-products/admin-products.component';
+import { ProductsTableComponent } from './admin-products/products-table/products-table.component';
+import { AddProductsComponent } from './admin-products/add-products/add-products.component';
+import { AddCategoryComponent } from './admin-products/add-category/add-category.component';
+import { EditCategoryComponent } from './admin-products/edit-category/edit-category.component';
 
 const routes: Routes = [
   {
@@ -49,6 +54,7 @@ const routes: Routes = [
           { path: 'sellers', component: AdminSellersComponent },
           { path: 'admins', component: AdminAdminsComponent },
           { path: 'orders', component: AdminOrdersComponent },
+          { path: 'products', component: AdminProductsComponent },
           { path: '', redirectTo: 'overview', pathMatch: 'full' },
         ],
       },
@@ -80,6 +86,11 @@ const routes: Routes = [
     AdminAdminsComponent,
     AdminTableComponent,
     AdminOrdersComponent,
+    AdminProductsComponent,
+    ProductsTableComponent,
+    AddProductsComponent,
+    AddCategoryComponent,
+    EditCategoryComponent,
   ],
   imports: [
     CommonModule,
