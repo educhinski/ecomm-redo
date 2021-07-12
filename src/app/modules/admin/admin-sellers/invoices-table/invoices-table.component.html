@@ -2,9 +2,9 @@
   <thead class="text-muted">
     <tr>
       <th scope="col">ID</th>
-      <th scope="col">Seller</th>
-      <th scope="col">Last Sale</th>
-      <th scope="col">Last Login</th>
+      <th scope="col">Invoice To</th>
+      <th scope="col">From</th>
+      <th scope="col">Date & Time</th>
       <!-- <th scope="col">Priority</th> -->
       <th scope="col"></th>
     </tr>
@@ -16,7 +16,7 @@
       <!-- photo -->
       <td scope="row">
         <div class="d-flex flex-row align-items-center">
-          <img src="assets/images/user-2.png" alt="img" />
+          <!-- <img src="assets/images/user-2.png" alt="img" /> -->
           <div class="ml-3">
             <div>John Doe</div>
             <div class="text-small text-muted">email@example.com</div>
@@ -47,9 +47,8 @@
           <mat-icon>more_vert</mat-icon>
         </button>
         <mat-menu #menu="matMenu">
-          <button mat-menu-item>Payment</button>
-          <button mat-menu-item>Edit</button>
-          <button mat-menu-item>Request Invoice</button>
+          <button mat-menu-item>Send</button>
+          <button mat-menu-item>Mark Read</button>
           <button mat-menu-item>Delete</button>
         </mat-menu>
         <!-- <i class="fa fa-ellipsis-v" aria-hidden="true"></i> -->
@@ -61,7 +60,7 @@
       <!-- photo -->
       <td scope="row">
         <div class="d-flex flex-row align-items-center">
-          <img src="assets/images/user-3.png" alt="img" />
+          <!-- <img src="assets/images/user-3.png" alt="img" /> -->
           <div class="ml-3">
             <div>Seller</div>
             <div class="text-small text-muted">Lorem Ipsum</div>
@@ -92,9 +91,8 @@
           <mat-icon>more_vert</mat-icon>
         </button>
         <mat-menu #menu="matMenu">
-          <button mat-menu-item>Payment</button>
-          <button mat-menu-item>Edit</button>
-          <button mat-menu-item>Request Invoice</button>
+          <button mat-menu-item>Send</button>
+          <button mat-menu-item>Mark Read</button>
           <button mat-menu-item>Delete</button>
         </mat-menu>
         <!-- <i class="fa fa-ellipsis-v" aria-hidden="true"></i> -->
@@ -105,8 +103,8 @@
       <td scope="row">1</td>
       <!-- photo -->
       <td scope="row">
-        <div class="d-flex flex-row align-items-center">
-          <img src="assets/images/user-1.png" alt="img" />
+        <div class="d-flex flex-row align-items-start">
+          <!-- <img src="assets/images/user-1.png" alt="img" /> -->
           <div class="ml-3">
             <div>Seller</div>
             <div class="text-small text-muted">Lorem Ipsum</div>
@@ -137,9 +135,8 @@
           <mat-icon>more_vert</mat-icon>
         </button>
         <mat-menu #menu="matMenu">
-          <button mat-menu-item>Payment</button>
-          <button mat-menu-item>Edit</button>
-          <button mat-menu-item>Request Invoice</button>
+          <button mat-menu-item>Send</button>
+          <button mat-menu-item>Mark Read</button>
           <button mat-menu-item>Delete</button>
         </mat-menu>
         <!-- <i class="fa fa-ellipsis-v" aria-hidden="true"></i> -->
