@@ -3,7 +3,9 @@
   *ngIf="loggedIn"
   class="navbar navbar-expand-md navbar-light fixed-top my-md-3"
 >
-  <a class="navbar-brand logo" [routerLink]="['/']">LOGO</a>
+  <a class="navbar-brand" routerLink="/">
+    <img class="logo" src="assets/images/logo.jpeg" alt="EcoSea Logo" />
+  </a>
   <button
     class="navbar-toggler px-0"
     type="button"
@@ -81,7 +83,9 @@
   *ngIf="!loggedIn"
   class="navbar navbar-expand-md navbar-light fixed-top my-md-3"
 >
-  <a class="navbar-brand logo" [routerLink]="['/']">LOGO</a>
+  <a class="navbar-brand" routerLink="/">
+    <img class="logo" src="assets/images/logo.jpeg" alt="EcoSea Logo" />
+  </a>
   <button
     class="navbar-toggler px-0"
     type="button"

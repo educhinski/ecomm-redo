@@ -3,10 +3,13 @@ nav {
   background-color: #fff;
 }
 
+.navbar-brand {
+  height: 2.5em;
+}
+
 .logo {
-  font-weight: 900;
-  font-size: 2rem;
-  color: var(--theme-color, orange);
+  height: 100%;
+  object-fit: scale-down;
 }
 
 form {
