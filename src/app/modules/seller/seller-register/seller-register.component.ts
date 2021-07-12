@@ -11,7 +11,7 @@ import { MustMatch } from '../../../shared/helpers/must-match.validator';
   styleUrls: ['./seller-register.component.css'],
 })
 export class SellerRegisterComponent implements OnInit {
-  sellerTypes = ['retailer', 'wholesaler', 'manufacturer'];
+  sellerTypes = ['retailer', 'wholesaler', 'manufacturer', 'other'];
   categories = [
     'gardens & outdoors',
     'health & body',

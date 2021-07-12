@@ -24,6 +24,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { SellerProductsComponent } from './seller-products/seller-products.component';
 
 const routes: Routes = [
   { path: '', component: SellerAccountComponent },
@@ -38,12 +39,12 @@ const routes: Routes = [
   },
   { path: 'reviews', component: SellerReviewsComponent },
   { path: 'credit', component: SellerCreditComponent },
-  { path: 'stock', component: SellerStockComponent },
   { path: 'recent', component: SellerRecentComponent },
-  { path: 'details', component: SellerDetailsComponent },
+  { path: 'profile', component: SellerDetailsComponent },
   { path: 'address', component: SellerAddressComponent },
   { path: 'password', component: SellerPasswordComponent },
   { path: 'invoice', component: SellerInvoicesComponent },
+  { path: 'products', component: SellerProductsComponent },
   { path: 'delete', component: SellerAccountDeleteComponent },
 ];
 
@@ -65,6 +66,7 @@ const routes: Routes = [
     SellerInvoicesComponent,
     SellerViewInvoiceComponent,
     SellerInvoiceTableComponent,
+    SellerProductsComponent,
   ],
   imports: [
     CommonModule,

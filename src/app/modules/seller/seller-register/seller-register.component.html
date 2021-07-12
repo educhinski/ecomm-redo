@@ -46,7 +46,11 @@
                     <option value="" disabled selected hidden>
                       Seller Type
                     </option>
-                    <option *ngFor="let type of sellerTypes" [value]="type">
+                    <option
+                      *ngFor="let type of sellerTypes"
+                      [value]="type"
+                      class="text-capitalize"
+                    >
                       {{ type }}
                     </option>
                   </select>
@@ -206,7 +210,11 @@
                 }"
               >
                 <option value="" disabled selected hidden>Category</option>
-                <option *ngFor="let category of categories" [value]="category">
+                <option
+                  *ngFor="let category of categories"
+                  [value]="category"
+                  class="text-capitalize"
+                >
                   {{ category }}
                 </option>
               </select>
