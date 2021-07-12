@@ -43,6 +43,7 @@ import { EditSettingsComponent } from './admin-settings/edit-settings/edit-setti
 import { SettingsComponent } from './admin-settings/settings/settings.component';
 import { AddSliderComponent } from './admin-products/add-slider/add-slider.component';
 import { SliderTableComponent } from './admin-products/slider-table/slider-table.component';
+import { InvoicesTableComponent } from './admin-sellers/invoices-table/invoices-table.component';
 
 const routes: Routes = [
   {
@@ -104,6 +105,7 @@ const routes: Routes = [
     SettingsComponent,
     AddSliderComponent,
     SliderTableComponent,
+    InvoicesTableComponent,
   ],
   imports: [
     CommonModule,
