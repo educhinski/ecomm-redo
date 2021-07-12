@@ -71,3 +71,8 @@ form i {
 .navbar-toggler {
   border-color: transparent;
 }
+
+.nav-item a:hover {
+  color: var(--theme-color, orange);
+  cursor: pointer;
+}
