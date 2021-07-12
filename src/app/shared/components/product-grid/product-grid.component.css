@@ -138,7 +138,7 @@ img:hover {
   font-size: 0.85em;
 }
 
-.fa-heart-o:hover {
+.fa-shopping-cart:hover {
   cursor: pointer;
   color: var(--theme-color, orange) !important;
 }
@@ -163,6 +163,11 @@ img:hover {
 
 .carousel-control-next {
   justify-content: flex-end;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 2em !important;
 }
 
 .carousel-control-next-icon,
