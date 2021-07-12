@@ -17,6 +17,13 @@ import { SellerChatListComponent } from './seller-inbox/seller-chat-list/seller-
 import { ReactiveFormsModule } from '@angular/forms';
 import { SellerAccountDeleteComponent } from './seller-account-delete/seller-account-delete.component';
 import { SellerInvoicesComponent } from './seller-invoices/seller-invoices.component';
+import { SellerInvoiceTableComponent } from './seller-invoices/seller-invoice-table/seller-invoice-table.component';
+import { SellerViewInvoiceComponent } from './seller-invoices/seller-view-invoice/seller-view-invoice.component';
+
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
 const routes: Routes = [
   { path: '', component: SellerAccountComponent },
@@ -56,7 +63,17 @@ const routes: Routes = [
     SellerChatListComponent,
     SellerAccountDeleteComponent,
     SellerInvoicesComponent,
+    SellerViewInvoiceComponent,
+    SellerInvoiceTableComponent,
   ],
-  imports: [CommonModule, ReactiveFormsModule, RouterModule.forChild(routes)],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    RouterModule.forChild(routes),
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDividerModule,
+  ],
 })
 export class SellerAccountModule {}
