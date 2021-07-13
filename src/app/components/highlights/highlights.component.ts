@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  categories,
+  categoriesHeadings,
+} from 'src/app/shared/helpers/categories';
 
 @Component({
   selector: 'app-highlights',
@@ -6,21 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./highlights.component.css'],
 })
 export class HighlightsComponent implements OnInit {
-  categories = [
-    'supermarket',
-    'health & beauty',
-    'home & office',
-    'phones & tablets',
-    'computing',
-    'electronics',
-    'fashion',
-    'gaming',
-    'baby products',
-    'sporting-goods',
-    'garden & outdoors',
-    'other categories',
-  ];
-
+  categories = categoriesHeadings;
   quickLinks = [
     {
       title: 'help center',
