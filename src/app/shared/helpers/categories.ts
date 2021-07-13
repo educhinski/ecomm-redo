@@ -10,6 +10,7 @@ const categories: string[] = [
   'baby-products',
   'sporting-goods',
   'garden-outdoors',
+  'meals',
   'other-categories',
 ];
 
@@ -25,6 +26,7 @@ const categoriesHeadings: string[] = [
   'baby products',
   'sporting goods',
   'garden & outdoors',
+  'meals',
   'other categories',
 ];
 
