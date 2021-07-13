@@ -17,14 +17,23 @@
 }
 
 .mat-sidenav-content > .mat-toolbar {
-  background: var(--theme-color, orange);
+  /* background: var(--theme-color, orange); */
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(3, 187, 133, 1) 45%,
+    rgba(3, 187, 133, 1) 100%
+  );
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 2rem;
-  color: var(--theme-color, orange);
   text-align: center;
+  padding: 0 1.25em;
+}
+
+.logo img {
+  width: 6em;
 }
 
 i {

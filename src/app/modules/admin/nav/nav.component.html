@@ -9,7 +9,9 @@
   >
     <mat-toolbar>
       <mat-toolbar-row class="flex-column justify-content-center">
-        <a class="navbar-brand logo" [routerLink]="['/home']">LOGO</a>
+        <a class="navbar-brand mr-0 logo" routerLink="/">
+          <img src="assets/images/ecosea_logo_.png" alt="EcoSea Logo" />
+        </a>
       </mat-toolbar-row>
       <mat-toolbar-row class="flex-column h-auto">
         <div class="profile-card">
@@ -91,14 +93,23 @@
     <mat-toolbar color="primary" class="justify-space-around px-0 pl-3">
       <button
         type="button"
+        class="bg-dark"
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
         *ngIf="isHandset$ | async"
       >
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        <mat-icon
+          aria-label="Side nav toggle icon"
+          [ngStyle]="{
+            color: 'var(--theme-color, orange)'
+          }"
+          >menu</mat-icon
+        >
       </button>
-      <span>LOGO</span>
+      <a class="navbar-brand mr-0 logo" routerLink="/">
+        <img src="assets/images/ecosea_logo_.png" alt="EcoSea Logo" />
+      </a>
       <!-- <div
         class="
           d-flex
