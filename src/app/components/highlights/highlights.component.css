@@ -54,6 +54,20 @@ ul li a:hover {
   text-transform: capitalize;
 }
 
+.subcategory {
+  display: none;
+  margin-left: 10%;
+}
+
+.subcategory li {
+  font-size: 90%;
+  padding-bottom: 0.5em;
+}
+
+.category:hover .subcategory {
+  display: block;
+}
+
 @media screen and (max-width: 991px) {
   .categories {
     order: 2;
