@@ -5,7 +5,7 @@
       <th scope="col">Invoice To</th>
       <th scope="col">From</th>
       <th scope="col">Date & Time</th>
-      <!-- <th scope="col">Priority</th> -->
+      <th scope="col">Status</th>
       <th scope="col"></th>
     </tr>
   </thead>
@@ -37,10 +37,10 @@
           <div class="text-small text-muted">6:30PM</div>
         </div>
       </td>
-      <!-- priority -->
-      <!-- <td>
-        <span class="badge badge-danger text-uppercase px-3 py-2">High</span>
-      </td> -->
+      <!-- status -->
+      <td>
+        <span class="badge badge-success text-uppercase px-3 py-2">Paid</span>
+      </td>
       <!-- extra icon -->
       <td>
         <button mat-button [matMenuTriggerFor]="menu">
@@ -81,10 +81,10 @@
           <div class="text-small text-muted">6:30PM</div>
         </div>
       </td>
-      <!-- priority -->
-      <!-- <td>
-        <span class="badge badge-warning text-uppercase px-3 py-2">Low</span>
-      </td> -->
+      <!-- status -->
+      <td>
+        <span class="badge badge-danger text-uppercase px-3 py-2">Unpaid</span>
+      </td>
       <!-- extra icon -->
       <td>
         <button mat-button [matMenuTriggerFor]="menu">
@@ -125,10 +125,10 @@
           <div class="text-small text-muted">6:30PM</div>
         </div>
       </td>
-      <!-- priority -->
-      <!-- <td>
-        <span class="badge badge-success text-uppercase px-3 py-2">Normal</span>
-      </td> -->
+      <!-- status -->
+      <td>
+        <span class="badge badge-success text-uppercase px-3 py-2">Paid</span>
+      </td>
       <!-- extra icon -->
       <td>
         <button mat-button [matMenuTriggerFor]="menu">
