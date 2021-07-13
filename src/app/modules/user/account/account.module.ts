@@ -12,7 +12,6 @@ import { SavedItemsComponent } from './saved-items/saved-items.component';
 import { RecentComponent } from './recent/recent.component';
 import { AccountDetailsComponent } from './account-details/account-details.component';
 import { AddressComponent } from './address/address.component';
-import { NewsletterComponent } from './newsletter/newsletter.component';
 import { PasswordComponent } from './password/password.component';
 import { CheckoutComponent } from './orders/checkout/checkout.component';
 import { ConfirmedComponent } from './orders/checkout/confirmed/confirmed.component';
@@ -48,7 +47,6 @@ const routes: Routes = [
       { path: 'details', component: AccountDetailsComponent },
       { path: 'address', component: AddressComponent },
       { path: 'password', component: PasswordComponent },
-      { path: 'newsletter', component: NewsletterComponent },
       { path: 'delete', component: AccountDeleteComponent },
       { path: '', component: AccountHomeComponent },
     ],
@@ -66,7 +64,6 @@ const routes: Routes = [
     RecentComponent,
     AccountDetailsComponent,
     AddressComponent,
-    NewsletterComponent,
     PasswordComponent,
     CheckoutComponent,
     ConfirmedComponent,

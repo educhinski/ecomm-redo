@@ -20,13 +20,13 @@ import { SellerAccountDeleteComponent } from './seller-account-delete/seller-acc
 import { SellerInvoicesComponent } from './seller-invoices/seller-invoices.component';
 import { SellerInvoiceTableComponent } from './seller-invoices/seller-invoice-table/seller-invoice-table.component';
 import { SellerViewInvoiceComponent } from './seller-invoices/seller-view-invoice/seller-view-invoice.component';
+import { SellerProductsComponent } from './seller-products/seller-products.component';
+import { SellerSalesChartComponent } from './charts/seller-sales-chart/seller-sales-chart.component';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
-import { SellerProductsComponent } from './seller-products/seller-products.component';
-import { SellerSalesChartComponent } from './charts/seller-sales-chart/seller-sales-chart.component';
 
 const routes: Routes = [
   { path: '', component: SellerAccountComponent },
