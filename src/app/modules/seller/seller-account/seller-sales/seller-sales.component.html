@@ -1,5 +1,97 @@
 <div class="container py-5">
+  <h2 class="text-center">Sales</h2>
   <div class="row">
+    <div class="col-md-10 col-sm-12">
+      <h3 class="h5">Sales Insights</h3>
+      <!-- Charts -->
+      <div
+        class="
+          chart
+          d-flex
+          flex-row
+          justify-content-between
+          align-items-center align-content-stretch
+          border
+          h-auto
+          py-md-3
+        "
+      >
+        <div class="line-chart">
+          <app-seller-sales-chart></app-seller-sales-chart>
+        </div>
+        <div
+          class="
+            data
+            w-25
+            d-flex
+            flex-column
+            align-self-center
+            border-left
+            text-center
+            h-100
+          "
+        >
+          <div class="h-100">
+            <p>Resolved</p>
+            <p>449</p>
+            <mat-divider></mat-divider>
+            <p>Received</p>
+            <p>449</p>
+            <mat-divider></mat-divider>
+            <p>Average First Response Time</p>
+            <p>449</p>
+            <mat-divider></mat-divider>
+            <p>Average Response Time</p>
+            <p>449</p>
+            <mat-divider></mat-divider>
+            <p>Resolutions</p>
+            <p>449</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-10 col-sm-12 mt-3">
+      <h3 class="h4"></h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Last Purchased</th>
+            <th scope="col">When</th>
+            <th scope="col">Earned</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Vase</td>
+            <td>16 min</td>
+            <td><b>$114.40</b></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Tea Pot</td>
+            <td>2 hours</td>
+            <td><b>$68.00</b></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Bonsai</td>
+            <td>1 day</td>
+            <td><b>$128.50</b></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Flour</td>
+            <td>1 day</td>
+            <td><b>$58.00</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!--
     <div class="card">
       <div class="row">
         <div class="col-md-12 cart">
@@ -80,7 +172,8 @@
             </button>
           </div>
         </div>
-        <!-- <div class="col-md-4 summary">
+         -->
+    <!-- <div class="col-md-4 summary">
         <div>
           <h5><b>Summary</b></h5>
         </div>
@@ -106,7 +199,8 @@
         </div>
         <button class="btn">CHECKOUT</button>
       </div> -->
-      </div>
+    <!-- </div>
     </div>
+ -->
   </div>
 </div>

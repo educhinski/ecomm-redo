@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./seller-reviews.component.css'],
 })
 export class SellerReviewsComponent implements OnInit {
-  imagePath = 'assets/images';
+  categories = ['reviewed-items'];
 
   constructor() {}
 
