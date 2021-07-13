@@ -3,17 +3,18 @@
 }
 
 .card-header {
-  background-color: var(--theme-color, orange);
+  background: #fff;
+  border-bottom: 0.2em solid var(--theme-color, orange);
 }
 
 .logo {
-  font-weight: 900;
-  font-size: 2rem;
-  color: #e5e5e5;
+  width: 10em;
+  padding: 0 0.4em 0.4em;
 }
 
-.logo:hover {
-  color: #fff;
+.logoName {
+  color: var(--theme-color, orange);
+  font-weight: bold;
 }
 
 .top-btn {
