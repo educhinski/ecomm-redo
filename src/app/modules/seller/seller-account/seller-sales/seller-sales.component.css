@@ -202,3 +202,15 @@ button:hover {
   background: #fff !important;
   border-color: var(--theme-color, orange) !important;
 }
+
+.line-chart {
+  width: 70% !important;
+}
+
+.data p {
+  margin-bottom: 0;
+}
+
+.container {
+  background: #fff;
+}

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
 
 import { SellerAccountComponent } from './seller-account.component';
 import { SellerRecentComponent } from './seller-recent/seller-recent.component';
@@ -14,7 +16,6 @@ import { SellerStockComponent } from './seller-stock/seller-stock.component';
 import { SellerSalesComponent } from './seller-sales/seller-sales.component';
 import { SellerChatComponent } from './seller-inbox/seller-chat/seller-chat.component';
 import { SellerChatListComponent } from './seller-inbox/seller-chat-list/seller-chat-list.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { SellerAccountDeleteComponent } from './seller-account-delete/seller-account-delete.component';
 import { SellerInvoicesComponent } from './seller-invoices/seller-invoices.component';
 import { SellerInvoiceTableComponent } from './seller-invoices/seller-invoice-table/seller-invoice-table.component';
@@ -25,6 +26,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { SellerProductsComponent } from './seller-products/seller-products.component';
+import { SellerSalesChartComponent } from './charts/seller-sales-chart/seller-sales-chart.component';
 
 const routes: Routes = [
   { path: '', component: SellerAccountComponent },
@@ -67,11 +69,13 @@ const routes: Routes = [
     SellerViewInvoiceComponent,
     SellerInvoiceTableComponent,
     SellerProductsComponent,
+    SellerSalesChartComponent,
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     RouterModule.forChild(routes),
+    ChartsModule,
     MatMenuModule,
     MatButtonModule,
     MatIconModule,
