@@ -44,6 +44,8 @@ import { SettingsComponent } from './admin-settings/settings/settings.component'
 import { AddSliderComponent } from './admin-products/add-slider/add-slider.component';
 import { SliderTableComponent } from './admin-products/slider-table/slider-table.component';
 import { InvoicesTableComponent } from './admin-sellers/invoices-table/invoices-table.component';
+import { AdminSellerInvoicesComponent } from './admin-sellers/admin-seller-invoices/admin-seller-invoices.component';
+import { AdminSellerViewInvoicesComponent } from './admin-sellers/admin-seller-view-invoices/admin-seller-view-invoices.component';
 
 const routes: Routes = [
   {
@@ -106,6 +108,8 @@ const routes: Routes = [
     AddSliderComponent,
     SliderTableComponent,
     InvoicesTableComponent,
+    AdminSellerInvoicesComponent,
+    AdminSellerViewInvoicesComponent,
   ],
   imports: [
     CommonModule,
