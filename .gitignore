@@ -44,5 +44,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# rest apis
-rest-api.http
+# local api server
+/server
