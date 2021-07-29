@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
 import { categories, categoriesHeadings } from '../../helpers/categories';
 
 @Component({
@@ -9,8 +10,14 @@ import { categories, categoriesHeadings } from '../../helpers/categories';
 export class ProductGridComponent implements OnInit {
   categories = categories;
   headings = categoriesHeadings;
+  products: any[] = [];
 
-  constructor() {}
+  constructor(private dataService: DataService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.dataService.getProducts().subscribe((data: any) => {
+      console.log(data);
+      this.products = data;
+    });
+  }
 }
