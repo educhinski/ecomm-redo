@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AdminService } from '../../services/admin.service';
 
 @Component({
   selector: 'app-admin-add-category',
@@ -10,7 +11,7 @@ export class AddCategoryComponent implements OnInit {
   adminAddCategory!: FormGroup;
   submitted = false;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private admin: AdminService) {}
 
   ngOnInit(): void {
     this.adminAddCategory = this.formBuilder.group({
@@ -23,7 +24,11 @@ export class AddCategoryComponent implements OnInit {
     return this.adminAddCategory.controls;
   }
 
-  onSubmit() {
+  onSubmit(formData: any) {
+    this.admin.createTopCategory(formData).subscribe(() => {
+      console.log(formData);
+    });
+
     this.submitted = true;
 
     // stop here if form is invalid
