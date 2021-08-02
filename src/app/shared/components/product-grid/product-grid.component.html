@@ -19,8 +19,8 @@
             class="col-6 col-lg-2 col-md-4 py-3 px-2"
             *ngFor="let product of products"
           >
-            <img [src]="product.attributes.imageUrl" alt="" />
-            <h3>{{ product.attributes.name }}</h3>
+            <img [src]="product.imagePath" alt="" />
+            <h3>{{ product.name }}</h3>
             <div
               class="
                 price-offer
@@ -29,14 +29,12 @@
                 align-items-center
               "
             >
-              <p class="price m-0">
-                {{ product.attributes.currency }}{{ product.attributes.price }}
-              </p>
-              <p class="offer m-0 px-1">50% off</p>
+              <p class="price m-0">{{ product.currency }}{{ product.price }}</p>
+              <p class="offer m-0 px-1">{{ product.discountPercent }}% off</p>
             </div>
 
             <p class="extra-info pt-2 text-muted">
-              {{ product.attributes.description }}
+              {{ product.description }}
             </p>
             <div
               class="
