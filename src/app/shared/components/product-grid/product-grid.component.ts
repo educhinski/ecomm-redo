@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
 import { categories, categoriesHeadings } from '../../helpers/categories';
 
@@ -12,8 +13,12 @@ export class ProductGridComponent implements OnInit {
   headings = categoriesHeadings;
   productsData: any[] = [];
   products: any[] = [];
+  currentProduct: any[] = [];
+  currentViewProduct: any = {};
+  currentProductId!: string;
+  modalDisplay = 'none';
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService, private router: Router) {}
 
   ngOnInit(): void {
     this.dataService.getProducts().subscribe((data: any) => {
@@ -42,5 +47,24 @@ export class ProductGridComponent implements OnInit {
       }
     }
     return products;
+  }
+
+  // view product
+  viewProduct(product: any) {
+    this.modalDisplay = 'block';
+    this.currentViewProduct = product;
+  }
+
+  closeModal() {
+    this.modalDisplay = 'none';
+  }
+
+  addToCart(id: string, quantity: number) {
+    this.dataService.createCartItem(id, quantity).subscribe((resp) => {
+      console.log(resp);
+      this.router.navigate(['/cart']);
+    });
+
+    this.router.navigate(['/cart']);
   }
 }

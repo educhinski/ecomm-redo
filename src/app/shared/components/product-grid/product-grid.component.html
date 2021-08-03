@@ -18,6 +18,8 @@
           <div
             class="col-6 col-lg-2 col-md-4 py-3 px-2"
             *ngFor="let product of products"
+            id="product"
+            (click)="viewProduct(product)"
           >
             <img [src]="product.imagePath" alt="" />
             <h3>{{ product.name }}</h3>
@@ -209,6 +211,48 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal" [style.display]="modalDisplay">
+  <!-- Modal content -->
+  <div class="modal-content container-md">
+    <div class="modal-header d-flex">
+      <h2 class="align-self-start">{{ currentViewProduct.name }}</h2>
+      <span class="close" (click)="closeModal()">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div class="card d-flex flex-column">
+        <img
+          class="card-img w-50 d-block"
+          [src]="currentViewProduct.imagePath"
+          alt="Card image cap"
+        />
+        <div class="card-body w-50 m-0">
+          <h3 class="name">{{ currentViewProduct.name | uppercase }}</h3>
+          <div class="price">
+            {{ currentViewProduct.currency }}{{ currentViewProduct.price }}
+          </div>
+          <div class="description">{{ currentViewProduct.description }}</div>
+          <div class="cart">
+            <button
+              type="button"
+              class="btn btn-outline-primary text-uppercase mt-3"
+              (click)="addToCart(currentViewProduct.id, 3)"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer d-flex justify-content-start">
+      <span class="btn btn-outline-dark px-2" (click)="closeModal()">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+        Back
+      </span>
+    </div>
   </div>
 </div>
 
