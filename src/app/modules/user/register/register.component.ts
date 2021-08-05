@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AccountService } from 'src/app/services/account.service';
 import { MustMatch } from '../../../shared/helpers/must-match.validator';
 
 @Component({
@@ -10,8 +12,13 @@ import { MustMatch } from '../../../shared/helpers/must-match.validator';
 export class RegisterComponent implements OnInit {
   userRegisterForm!: FormGroup;
   submitted = false;
+  loading = false;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    private router: Router,
+    private account: AccountService
+  ) {}
 
   ngOnInit(): void {
     this.userRegisterForm = this.formBuilder.group(
@@ -34,6 +41,15 @@ export class RegisterComponent implements OnInit {
     return this.userRegisterForm.controls;
   }
 
+  capitalizeFirstLetter(string: string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
+  get getName() {
+    return `${this.capitalizeFirstLetter(this.f.firstName.value)}
+      ${this.capitalizeFirstLetter(this.f.lastName.value)}`;
+  }
+
   onSubmit() {
     this.submitted = true;
 
@@ -41,5 +57,24 @@ export class RegisterComponent implements OnInit {
     if (this.userRegisterForm.invalid) {
       return;
     }
+
+    this.loading = true;
+    this.account
+      .register(
+        this.getName,
+        this.f.email.value,
+        this.f.password.value,
+        this.f.confirmPassword.value
+      )
+      .subscribe({
+        next: (sth) => {
+          console.log(sth);
+          this.router.navigate(['/user/login']);
+        },
+        error: (error) => {
+          this.loading = false;
+          console.log(error);
+        },
+      });
   }
 }
