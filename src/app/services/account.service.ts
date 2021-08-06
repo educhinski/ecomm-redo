@@ -35,7 +35,9 @@ export class AccountService {
 
   // logout
   logout(): Observable<any> {
-    return this.http.post(`${API}/logout`, {});
+    return this.http
+      .post(`${API}/logout`, {})
+      .pipe(catchError(this.handleError));
   }
 
   // register

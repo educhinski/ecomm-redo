@@ -7,6 +7,8 @@
         onclick="document.getElementById('id01').style.display='block'"
         class="btn btn-danger"
       >
+        <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1">
+        </span>
         Delete Account
       </button>
 
@@ -20,11 +22,18 @@
         <form class="modal-content">
           <div class="container">
             <h1>Delete Account</h1>
-            <p>Are you sure you want to delete your account?</p>
+            <p>Confirm that you really want to delete your account</p>
 
             <div class="clearfix">
               <button type="submit" class="cancelbtn">Cancel</button>
-              <button type="reset" class="deletebtn">Delete</button>
+              <button type="reset" class="deletebtn" (click)="deleteAccount()">
+                <span
+                  *ngIf="loading"
+                  class="spinner-border spinner-border-sm mr-1"
+                >
+                </span>
+                Delete
+              </button>
             </div>
           </div>
         </form>

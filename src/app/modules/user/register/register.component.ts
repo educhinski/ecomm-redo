@@ -67,13 +67,12 @@ export class RegisterComponent implements OnInit {
         this.f.confirmPassword.value
       )
       .subscribe({
-        next: (sth) => {
-          console.log(sth);
+        next: () => {
+          this.loading = false;
           this.router.navigate(['/user/login']);
         },
         error: (error) => {
           this.loading = false;
-          console.log(error);
         },
       });
   }

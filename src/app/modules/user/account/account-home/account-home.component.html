@@ -116,9 +116,16 @@
             class="panel-collapse collapse show"
             role="tabpanel"
             aria-labelledby="collapseListGroupHeading3"
+            (click)="logout()"
           >
             <ul class="list-group">
-              <li class="list-group-item text-center btn btn-link">Logout</li>
+              <li class="list-group-item text-center btn btn-link">
+                <span
+                  *ngIf="loading"
+                  class="spinner-border spinner-border-sm mr-1"
+                ></span>
+                Logout
+              </li>
               <li
                 class="list-group-item text-center btn btn-link"
                 [routerLink]="['./delete']"
