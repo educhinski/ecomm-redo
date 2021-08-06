@@ -14,30 +14,27 @@ const API = 'https://peaceful-beyond-74495.herokuapp.com/api';
   providedIn: 'root',
 })
 export class AccountService {
-  private currentUserBearer!: string;
-
   constructor(private http: HttpClient, private router: Router) {}
 
   // set user
   public set userToken(token: string) {
-    this.currentUserBearer = token;
+    localStorage.setItem('token', token);
   }
 
   // get user
   public get userToken(): string {
-    return this.currentUserBearer;
+    return localStorage.getItem('token') || '';
   }
 
   // login
   login(email: string, password: string): Observable<any> {
-    const loginData = { email, password };
     return this.http
-      .post(`${API}/login`, loginData)
+      .post(`${API}/login`, { email, password }, { responseType: 'text' })
       .pipe(catchError(this.handleError));
   }
 
   // logout
-  logout() {
+  logout(): Observable<any> {
     return this.http.post(`${API}/logout`, {});
   }
 
@@ -47,7 +44,7 @@ export class AccountService {
     email: string,
     password: string,
     passwordConfirmation: string
-  ) {
+  ): Observable<any> {
     return this.http.post(`${API}/register`, {
       name: username,
       email: email,

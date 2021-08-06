@@ -15,7 +15,7 @@ body {
 .card {
   margin: auto;
   max-width: 950px;
-  width: 90%;
+  width: 100%;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 1rem;
   border: transparent;
@@ -201,4 +201,9 @@ button:hover {
   color: var(--theme-color, orange) !important;
   background: #fff !important;
   border-color: var(--theme-color, orange) !important;
+}
+
+.minus,
+.plus {
+  cursor: pointer;
 }
